@@ -1,0 +1,28 @@
+[project]
+name = "fastapi-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shurik", email = "sanya.kucheryavvyh@bk.ru" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.32.0",
+    "fastapi>=0.143.3",
+    "loguru>=0.7.3",
+    "pydantic[email]>=2.14.1",
+    "pydantic-settings>=2.16.0",
+    "sqlalchemy[asyncio]>=2.1.4",
+    "uvicorn>=0.54.0",
+    "ruff>=0.17.1",
+    "jinja2>=3.1.6",
+]
+
+[tool.uv.build-backend]
+module-root = ""
+module-name = "app"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"

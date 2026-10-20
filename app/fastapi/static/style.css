@@ -1,0 +1,68 @@
+body {
+    background: #000000;
+    color: #EEEDF0;
+    font-family: 'Hack Nerd Font Mono', 'Consolas', monospace;
+}
+
+.navbar {
+    background: #0C0C0C !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #EEEDF0 !important;
+}
+
+.nav-link:hover {
+    color: #16C60C !important;
+}
+
+h2 {
+    color: #16C60C;
+    font-weight: 600;
+}
+
+.table {
+    --bs-table-bg: #0C0C0C;
+    --bs-table-color: #EEEDF0;
+    --bs-table-border-color: #1E1A2E;
+    --bs-table-hover-bg: #1E1A3A;
+    --bs-table-hover-color: #FFFFFF;
+}
+
+.table thead th {
+    color: #C19C00;
+    border-bottom: 2px solid #1E1A2E;
+}
+
+.form-control {
+    background: #0C0C0C;
+    border: 1px solid #1E1A2E;
+    color: #EEEDF0;
+}
+
+.form-control:focus {
+    background: #0C0C0C;
+    color: #EEEDF0;
+    border-color: #16C60C;
+    box-shadow: 0 0 0 0.2rem rgba(22, 198, 12, 0.25);
+}
+
+.btn-success {
+    background: #13A10E;
+    border-color: #13A10E;
+}
+
+.btn-success:hover {
+    background: #16C60C;
+    border-color: #16C60C;
+}
+
+#empty-state, #loading {
+    color: #767676;
+}
+
+.alert-danger {
+    background: #2a0a0a;
+    border-color: #C50F1F;
+    color: #E74856;
+}

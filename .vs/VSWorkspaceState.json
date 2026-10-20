@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\fastapi",
+    "\\app\\fastapi\\db\\__pycache__",
+    "\\app\\fastapi\\routers",
+    "\\app\\fastapi\\services"
+  ],
+  "SelectedNode": "\\.editorconfig",
+  "PreviewInSolutionExplorer": false
+}

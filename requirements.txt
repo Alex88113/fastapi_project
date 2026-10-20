@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+loguru
+pydantic
+pydantic-settings
+sqlalchemy[asyncio]
+asyncpg
+jinja2

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Продукт{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <h2 id="form-title" class="mb-4">Новый продукт</h2>
+
+        <form id="product-form" novalidate>
+            <div class="mb-3">
+                <label class="form-label">Название</label>
+                <input type="text" name="title" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Цена</label>
+                <input type="number" name="price" class="form-control" step="0.01" min="0" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Количество</label>
+                <input type="number" name="quantity" class="form-control" min="0" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Описание</label>
+                <textarea name="description" class="form-control" rows="3"></textarea>
+            </div>
+
+            <div id="form-error" class="alert alert-danger d-none"></div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-success">Сохранить</button>
+                <a href="/ui/products" class="btn btn-outline-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

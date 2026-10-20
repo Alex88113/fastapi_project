@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Список продуктов{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Продукты</h2>
+    <a href="/ui/products/new" class="btn btn-success">+ Добавить продукт</a>
+</div>
+
+<div class="mb-3">
+    <input type="text" id="search" class="form-control" placeholder="Поиск по названию...">
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover align-middle" id="products-table">
+        <thead>
+            <tr>
+                <th style="width: 60px;">ID</th>
+                <th>Название</th>
+                <th style="width: 120px;">Цена</th>
+                <th style="width: 100px;">Кол-во</th>
+                <th>Описание</th>
+                <th style="width: 140px;">Действия</th>
+            </tr>
+        </thead>
+        <tbody id="products-tbody"></tbody>
+    </table>
+</div>
+
+<div id="empty-state" class="text-center text-secondary py-5 d-none">
+    Продуктов пока нет. <a href="/ui/products/new">Добавить первый</a>.
+</div>
+<div id="loading" class="text-center text-secondary py-5">Загрузка...</div>
+{% endblock %}
