@@ -29,5 +29,3 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           annotations: ${{ steps.metadata.outputs.annotations }}
-          provenance: true
-          sbom: true
